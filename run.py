@@ -4,23 +4,15 @@ from models.clf import CNN
 from models.clf_and_conv1d import Clf_and_Conv1d
 from helper_funtions import *
 
-hp = Help_Funcs()
-# X_train, y_train, X_test, y_test, X_val, y_val, labels, X, y, data = hp.load_data()
-# print(labels)
+# hp = Help_Funcs()
 
-# torch.save(X_train, "./data/cleaned/X_train-1.pt")
-# torch.save(X_test, "./data/cleaned/X_test-1.pt")
-# torch.save(y_test, "./data/cleaned/y_test-1.pt")
-# torch.save(y_train, "./data/cleaned/y_train-1.pt")
-# torch.save(X_val, "./data/cleaned/X_val-1.pt")
-# torch.save(y_val, "./data/cleaned/y_val-1.pt")
 
-X_train = torch.load("./data/cleaned/X_train.pt")
-X_test = torch.load("./data/cleaned/X_test.pt")
-y_test = torch.load("./data/cleaned/y_test.pt")
-y_train = torch.load("./data/cleaned/y_train.pt")
-X_val = torch.load("./data/cleaned/X_val.pt")
-y_val = torch.load("./data/cleaned/y_val.pt")
+X_train = torch.load()
+X_test = torch.load(
+y_test = torch.load()
+y_train = torch.load()
+X_val = torch.load()
+y_val = torch.load()
 torch.cuda.empty_cache()
 batch_size = 30
 optimizer = Adamax
